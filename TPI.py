@@ -76,7 +76,7 @@ def add_cola_espera_memoria():
 def comprobar_terminado():
     global CPT
     if proceso_ejecucion.TI_restante==0:
-        print("Terminó el proceso: ",proceso_ejecucion.proceso.idproc)   ###SACAAAAAAAAR
+        print("Terminó el proceso: ",proceso_ejecucion.proceso.idproc)  
         #Libero CPU
         proceso_ejecucion.TI_restante=None
         proceso_ejecucion.proceso=None
@@ -167,6 +167,4 @@ while CPT < len(Lista_procesos): #Mientras la cantidad de procesos terminados se
     input("\n\n ------------------------------------------------------------------ENTER to continue")
 
 
-input("\n\n ------------------------------------------------------------------ENTER to finish") ###SACAR
-
-#FALTA ::: Una vez que un proceso que estaba en cola_memoria se carga a la memoria, hay que sacarlo de esa cola
+input("\n\n ------------------------------------------------------------------ENTER to finish") 
